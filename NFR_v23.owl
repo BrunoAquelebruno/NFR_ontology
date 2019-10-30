@@ -1,0 +1,1178 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/aquelebruno/ontologies/2019/9/untitled-ontology-6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/aquelebruno/ontologies/2019/9/untitled-ontology-6">
+    <Prefix name="" IRI="http://www.semanticweb.org/aquelebruno/ontologies/2019/9/untitled-ontology-6"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://purl.obolibrary.org/obo/uo/releases/2019-03-29/uo.owl</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Uma ontologia para auxiliar o reconhecimento e levantamento de requisitos não funcionais para sistemas embarcados.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Requisitos não funcionais para sistemas embarcados</Literal>
+    </Annotation>
+    <Declaration>
+        <DataProperty IRI="#response_time_value"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_measured_by_power_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DispositivePart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalComponent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#memory_value"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActivationLatency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#WCET_value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flight_Controller"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStartTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StartTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_measured_by_volume_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jitter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Camera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReleaseTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MainBody"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_measured_by_weigth_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Synchronization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antenna"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motor_Mount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Memory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Task"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Propeller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Area"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laxity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TaskPeriodicity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Landing_Gear"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasResolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hardware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QuadcopterPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Deadline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDeadline"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#bandwidth_value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#area_value"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresArea"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#period_value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HardDisk"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresMemory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEndTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Performance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_measured_by_information_unit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aperiodic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gimbal_Motor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Precision"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPeriod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Solid-State_Drive"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ToleratedDelay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thread"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brushless_Motor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_measured_by_energy_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VolatileMemory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Periodic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sporadic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Link"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dispositive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EndTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Communication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BandWidth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_measured_by_area_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UAV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Measure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasReleaseTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Processor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Freshness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWCET"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasToUse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Timing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResponseTime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NFR"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasThread"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MemoryAlocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hosts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TotalEnergy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gimbal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_measured_by"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PowerConsumption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WCET"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActivationLatency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drift"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Embedded"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPeriodicityType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quadcopter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#deadline_value"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pusher_Prop"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_measured_by_time_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Volume"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TaskAllocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Throughtput"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Battery_Monitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Protocol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Receiver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonVolatileMemory"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Period"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gimbal_Controller_Unit"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Memory"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#memory_value"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Process"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasThread"/>
+            <Class IRI="#Thread"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#ActivationLatency"/>
+        <Class IRI="#Timing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antenna"/>
+        <Class IRI="#QuadcopterPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area"/>
+        <Class IRI="#Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_measured_by_area_unit"/>
+            <Class IRI="http://purl.obolibrary.org/obo/UO_0000047"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BandWidth"/>
+        <Class IRI="#Link"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Battery_Monitor"/>
+        <Class IRI="#QuadcopterPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boom"/>
+        <Class IRI="#QuadcopterPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brushless_Motor"/>
+        <Class IRI="#QuadcopterPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Camera"/>
+        <Class IRI="#QuadcopterPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communication"/>
+        <Class IRI="#Distribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Communication"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasResolution"/>
+            <Class IRI="#Resolution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cost"/>
+        <Class IRI="#Timing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Deadline"/>
+        <Class IRI="#Timing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dispositive"/>
+        <Class IRI="#PhysicalComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DispositivePart"/>
+        <Class IRI="#PhysicalComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Distribution"/>
+        <Class IRI="#NFR"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drift"/>
+        <Class IRI="#Precision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Embedded"/>
+        <Class IRI="#NFR"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EndTime"/>
+        <Class IRI="#Timing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Flight_Controller"/>
+        <Class IRI="#QuadcopterPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Freshness"/>
+        <Class IRI="#Precision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gimbal"/>
+        <Class IRI="#QuadcopterPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gimbal_Controller_Unit"/>
+        <Class IRI="#QuadcopterPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gimbal_Motor"/>
+        <Class IRI="#QuadcopterPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HardDisk"/>
+        <Class IRI="#NonVolatileMemory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hardware"/>
+        <Class IRI="#PhysicalComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hosts"/>
+        <Class IRI="#Distribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jitter"/>
+        <Class IRI="#Precision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jitter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasToUse"/>
+            <Class IRI="#PowerConsumption"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Landing_Gear"/>
+        <Class IRI="#QuadcopterPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laxity"/>
+        <Class IRI="#Precision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Link"/>
+        <Class IRI="#NFR"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MainBody"/>
+        <Class IRI="#QuadcopterPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measure"/>
+        <Class IRI="#NFR"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Memory"/>
+        <Class IRI="#Hardware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Memory"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_measured_by_information_unit"/>
+            <Class IRI="http://purl.obolibrary.org/obo/UO_0000231"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MemoryAlocation"/>
+        <Class IRI="#Embedded"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MemoryAlocation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_measured_by_information_unit"/>
+            <Class IRI="http://purl.obolibrary.org/obo/UO_0000231"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motor_Mount"/>
+        <Class IRI="#QuadcopterPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonVolatileMemory"/>
+        <Class IRI="#Memory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Performance"/>
+        <Class IRI="#NFR"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Period"/>
+        <Class IRI="#Timing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalComponent"/>
+        <Class IRI="#NFR"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PowerConsumption"/>
+        <Class IRI="#Embedded"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PowerConsumption"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasToUse"/>
+            <Class IRI="#TotalEnergy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PowerConsumption"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_measured_by_power_unit"/>
+            <Class IRI="http://purl.obolibrary.org/obo/UO_0000113"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Precision"/>
+        <Class IRI="#Time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process"/>
+        <Class IRI="#Task"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Processor"/>
+        <Class IRI="#Hardware"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Propeller"/>
+        <Class IRI="#QuadcopterPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Protocol"/>
+        <Class IRI="#Link"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pusher_Prop"/>
+        <Class IRI="#QuadcopterPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quadcopter"/>
+        <Class IRI="#UAV"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quadcopter"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <ObjectUnionOf>
+                <Class IRI="#Antenna"/>
+                <Class IRI="#Battery_Monitor"/>
+                <Class IRI="#Boom"/>
+                <Class IRI="#Brushless_Motor"/>
+                <Class IRI="#Camera"/>
+                <Class IRI="#Flight_Controller"/>
+                <Class IRI="#Gimbal"/>
+                <Class IRI="#Gimbal_Controller_Unit"/>
+                <Class IRI="#Gimbal_Motor"/>
+                <Class IRI="#Landing_Gear"/>
+                <Class IRI="#MainBody"/>
+                <Class IRI="#Motor_Mount"/>
+                <Class IRI="#Propeller"/>
+                <Class IRI="#Pusher_Prop"/>
+                <Class IRI="#Receiver"/>
+                <Class IRI="#Sensors"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QuadcopterPart"/>
+        <Class IRI="#DispositivePart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Receiver"/>
+        <Class IRI="#QuadcopterPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReleaseTime"/>
+        <Class IRI="#Timing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resolution"/>
+        <Class IRI="#Precision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResponseTime"/>
+        <Class IRI="#Performance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResponseTime"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_measured_by_time_unit"/>
+            <Class IRI="http://purl.obolibrary.org/obo/UO_0000003"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensors"/>
+        <Class IRI="#QuadcopterPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Solid-State_Drive"/>
+        <Class IRI="#NonVolatileMemory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StartTime"/>
+        <Class IRI="#Timing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Synchronization"/>
+        <Class IRI="#Distribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Synchronization"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has"/>
+            <Class IRI="#ToleratedDelay"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Task"/>
+        <Class IRI="#NFR"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Task"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPeriodicityType"/>
+            <Class IRI="#TaskPeriodicity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TaskAllocation"/>
+        <Class IRI="#Distribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TaskAllocation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasToUse"/>
+            <Class IRI="#MemoryAlocation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TaskPeriodicity"/>
+        <Class IRI="#NFR"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thread"/>
+        <Class IRI="#Task"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Throughtput"/>
+        <Class IRI="#Performance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Time"/>
+        <Class IRI="#NFR"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Time"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_measured_by_time_unit"/>
+            <Class IRI="http://purl.obolibrary.org/obo/UO_0000003"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Timing"/>
+        <Class IRI="#Time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ToleratedDelay"/>
+        <Class IRI="#Precision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TotalEnergy"/>
+        <Class IRI="#Embedded"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TotalEnergy"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_measured_by_energy_unit"/>
+            <Class IRI="http://purl.obolibrary.org/obo/UO_0000111"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UAV"/>
+        <Class IRI="#Dispositive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VolatileMemory"/>
+        <Class IRI="#Memory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Volume"/>
+        <Class IRI="#Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WCET"/>
+        <Class IRI="#Timing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weight"/>
+        <Class IRI="#Measure"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ActivationLatency"/>
+        <Class IRI="#Cost"/>
+        <Class IRI="#Deadline"/>
+        <Class IRI="#EndTime"/>
+        <Class IRI="#Period"/>
+        <Class IRI="#ReleaseTime"/>
+        <Class IRI="#StartTime"/>
+        <Class IRI="#WCET"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Area"/>
+        <Class IRI="#MemoryAlocation"/>
+        <Class IRI="#PowerConsumption"/>
+        <Class IRI="#TotalEnergy"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BandWidth"/>
+        <Class IRI="#Protocol"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Camera"/>
+        <Class IRI="#Memory"/>
+        <Class IRI="#Processor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Communication"/>
+        <Class IRI="#Hosts"/>
+        <Class IRI="#Synchronization"/>
+        <Class IRI="#TaskAllocation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Drift"/>
+        <Class IRI="#Freshness"/>
+        <Class IRI="#Jitter"/>
+        <Class IRI="#Laxity"/>
+        <Class IRI="#Resolution"/>
+        <Class IRI="#ToleratedDelay"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Precision"/>
+        <Class IRI="#Timing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Process"/>
+        <Class IRI="#Thread"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ResponseTime"/>
+        <Class IRI="#Throughtput"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#TaskPeriodicity"/>
+        <NamedIndividual IRI="#Aperiodic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TaskPeriodicity"/>
+        <NamedIndividual IRI="#Periodic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TaskPeriodicity"/>
+        <NamedIndividual IRI="#Sporadic"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Aperiodic"/>
+        <NamedIndividual IRI="#Periodic"/>
+        <NamedIndividual IRI="#Sporadic"/>
+    </DifferentIndividuals>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasActivationLatency"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCost"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDeadline"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEndTime"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPart"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPeriod"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasReleaseTime"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasResolution"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStartTime"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasThread"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasToUse"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasWCET"/>
+        <ObjectProperty IRI="#has"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_measured_by_area_unit"/>
+        <ObjectProperty IRI="#is_measured_by"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_measured_by_energy_unit"/>
+        <ObjectProperty IRI="#is_measured_by"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_measured_by_information_unit"/>
+        <ObjectProperty IRI="#is_measured_by"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_measured_by_power_unit"/>
+        <ObjectProperty IRI="#is_measured_by"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_measured_by_time_unit"/>
+        <ObjectProperty IRI="#is_measured_by"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_measured_by_volume_unit"/>
+        <ObjectProperty IRI="#is_measured_by"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_measured_by_weigth_unit"/>
+        <ObjectProperty IRI="#is_measured_by"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#requiresArea"/>
+        <ObjectProperty IRI="#requires"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#requiresMemory"/>
+        <ObjectProperty IRI="#requires"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPart"/>
+        <ObjectProperty IRI="#partOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasPeriod"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasActivationLatency"/>
+        <Class IRI="#Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCost"/>
+        <Class IRI="#Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDeadline"/>
+        <Class IRI="#Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEndTime"/>
+        <Class IRI="#Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPeriodicityType"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPeriodicityType"/>
+            <Class IRI="#Task"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasReleaseTime"/>
+        <Class IRI="#Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasResolution"/>
+        <Class IRI="#Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStartTime"/>
+        <Class IRI="#Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasThread"/>
+        <Class IRI="#Process"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWCET"/>
+        <Class IRI="#Task"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_measured_by"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_measured_by"/>
+            <Class IRI="#Measure"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_measured_by_area_unit"/>
+        <Class IRI="#Area"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_measured_by_information_unit"/>
+        <Class IRI="#MemoryAlocation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_measured_by_power_unit"/>
+        <Class IRI="#PowerConsumption"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_measured_by_time_unit"/>
+        <Class IRI="#Time"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_measured_by_volume_unit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_measured_by_volume_unit"/>
+            <Class IRI="#Volume"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_measured_by_weigth_unit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_measured_by_weigth_unit"/>
+            <Class IRI="#Weight"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasActivationLatency"/>
+        <Class IRI="#ActivationLatency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCost"/>
+        <Class IRI="#Cost"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDeadline"/>
+        <Class IRI="#Deadline"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEndTime"/>
+        <Class IRI="#EndTime"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPeriod"/>
+        <Class IRI="#Period"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPeriodicityType"/>
+        <Class IRI="#TaskPeriodicity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasReleaseTime"/>
+        <Class IRI="#ReleaseTime"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStartTime"/>
+        <Class IRI="#StartTime"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasThread"/>
+        <Class IRI="#Thread"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWCET"/>
+        <Class IRI="#WCET"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_measured_by_area_unit"/>
+        <Class IRI="http://purl.obolibrary.org/obo/UO_0000047"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_measured_by_information_unit"/>
+        <Class IRI="http://purl.obolibrary.org/obo/UO_0000231"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_measured_by_power_unit"/>
+        <Class IRI="http://purl.obolibrary.org/obo/UO_0000113"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_measured_by_time_unit"/>
+        <Class IRI="http://purl.obolibrary.org/obo/UO_0000003"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_measured_by_volume_unit"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#is_measured_by_volume_unit"/>
+            <Class IRI="http://purl.obolibrary.org/obo/UO_0000095"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#WCET_value"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#area_value"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#memory_value"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#period_value"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#response_time_value"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#bandwidth_value"/>
+        <Class IRI="#BandWidth"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasType"/>
+        <Class IRI="#Task"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#response_time_value"/>
+        <Class IRI="#ResponseTime"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#area_value"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#bandwidth_value"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasType"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">aperiodic</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">periodic</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">sporadic</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#memory_value"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#response_time_value"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">If the task is periodic the the task has a period</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">S1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Task"/>
+                <Variable IRI="#t"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasPeriodicityType"/>
+                <Variable IRI="#t"/>
+                <NamedIndividual IRI="#Periodic"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Period"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasPeriod"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#p"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#QuadcopterPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://www.dronezon.com/learn-about-drones-quadcopters/drone-components-parts-overview-with-tips/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">https://www.w3.org/2001/sw/BestPractices/OEP/SimplePartWhole/</Literal>
+    </AnnotationAssertion>
+    <DatatypeDefinition>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">aperiodic</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">periodic</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">sporadic</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype abbreviatedIRI="xsd:string"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">aperiodic</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">periodic</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">sporadic</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
